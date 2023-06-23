@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: esword-db
+  main:
+    banner-mode: "off"
+  datasource:
+    url: jdbc:sqlite:kjv+.bbli
+    driverClassName: org.sqlite.JDBC
+  jpa:
+    defer-datasource-initialization: false
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog.yml
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+    root: INFO
+    com:
+      codified:
+        esword: INFO
+
