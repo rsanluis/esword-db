@@ -38,6 +38,42 @@ public class VerifyCountsTest {
     assertNotNull(rowSize);
     log.info("rowSize: {}", rowSize);
     assertTrue(rowSize == 1);
+
+    tableName = "Book";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 66);
+
+    tableName = "Context";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 12);
+
+    tableName = "WordMatchesBible";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 26971);
+
+    tableName = "WordMatchesDan";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 2383);
+
+    tableName = "WordMatchesDanRev";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 4036);
+
+    tableName = "WordMatchesRev";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 2258);
   }
 
   private Integer getRowSizeFromTable(String tableName) {
