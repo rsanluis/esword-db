@@ -11,3 +11,10 @@ databaseChangeLog:
   - include:
       file: /data/dml.changelog-2.sql
       relativeToChangelogFile: true
+  - include:
+      file: /table/ddl.changelog-3.sql
+      relativeToChangelogFile: true
+  - include:
+      file: /data/dml.changelog-3.sql
+      relativeToChangelogFile: true
+
