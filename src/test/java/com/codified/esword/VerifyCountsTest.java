@@ -27,6 +27,12 @@ public class VerifyCountsTest {
     log.info("rowSize: {}", rowSize);
     assertTrue(rowSize == 31102);
 
+    tableName = "BibleFTS";
+    rowSize = getRowSizeFromTable(tableName);
+    assertNotNull(rowSize);
+    log.info("rowSize: {}", rowSize);
+    assertTrue(rowSize == 31102);
+
     tableName = "Details";
     rowSize = getRowSizeFromTable(tableName);
     assertNotNull(rowSize);
