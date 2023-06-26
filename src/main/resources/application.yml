@@ -13,7 +13,7 @@ spring:
       hibernate:
         dialect: org.hibernate.community.dialect.SQLiteDialect
   liquibase:
-    change-log: classpath:db/changelog/db.changelog.yml
+    change-log: classpath:db/changelog/db.changelog-master.yaml
   sql:
     init:
       mode: always
