@@ -23,7 +23,7 @@ dependencies {
 	implementation 'org.liquibase:liquibase-core'
 	implementation 'org.apache.commons:commons-lang3'
 	implementation 'org.yaml:snakeyaml:2.0' // Upgrading due to CVE-2022-1471
-    	compileOnly 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
