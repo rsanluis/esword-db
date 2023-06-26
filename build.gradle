@@ -8,6 +8,7 @@ plugins {
 group = 'com.codified.esword'
 version = '1.0.3-SNAPSHOT'
 sourceCompatibility = '17'
+targetCompatibility = '17'
 
 repositories {
 	mavenCentral()
